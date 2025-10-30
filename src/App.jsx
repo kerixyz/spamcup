@@ -181,9 +181,38 @@ function App() {
                 <Sparkles className="w-8 h-8 text-spam-yellow" />
                 <h3 className="text-xl font-bold text-spam-yellow">Sponsored By</h3>
               </div>
-              <p className="text-lg text-slate-200 leading-relaxed">
-                123 forever green
-              </p>
+              <div className="space-y-6">
+                {/* Tier I Sponsors */}
+                <div>
+                  <p className="text-sm font-semibold text-spam-yellow/80 mb-3">Tier I</p>
+                  <div className="space-y-3">
+                    {/* Sponsor 1 */}
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 bg-white/10 rounded-lg border border-white/20 flex items-center justify-center flex-shrink-0">
+                        <Sparkles className="w-6 h-6 text-spam-yellow/50" />
+                      </div>
+                      <p className="text-lg text-slate-200">ETHYL ANGELES</p>
+                    </div>
+                    {/* Sponsor 2 */}
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 bg-white/10 rounded-lg border border-white/20 flex items-center justify-center flex-shrink-0">
+                        <Sparkles className="w-6 h-6 text-spam-yellow/50" />
+                      </div>
+                      <p className="text-lg text-slate-200">MEDVAS</p>
+                    </div>
+                  </div>
+                </div>
+                {/* Tier II Sponsors */}
+                <div>
+                  <p className="text-sm font-semibold text-spam-yellow/80 mb-3">Tier II</p>
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 bg-white/10 rounded-lg border border-white/20 flex items-center justify-center flex-shrink-0">
+                      <Sparkles className="w-6 h-6 text-spam-yellow/50" />
+                    </div>
+                    <p className="text-lg text-slate-200">SISTER MALLARI</p>
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </div>
         </motion.section>
