@@ -67,6 +67,15 @@ function App() {
               Register Now
             </motion.a>
           </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.9, duration: 0.6 }}
+            className="text-slate-400 text-sm mt-4"
+          >
+            Registration deadline: November 15, 2025
+          </motion.p>
         </motion.section>
 
         {/* Info Cards Grid - Hackathon Style */}
