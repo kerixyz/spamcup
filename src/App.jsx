@@ -26,7 +26,7 @@ function App() {
             className="mb-6"
           >
             <div className="inline-block bg-spam-yellow px-6 py-2 rounded-full mb-6">
-              <p className="text-spam-blue-dark font-bold text-sm uppercase tracking-wider">November 20, 2025</p>
+              <p className="text-spam-blue-dark font-bold text-sm uppercase tracking-wider">December 13, 2025</p>
             </div>
           </motion.div>
 
@@ -47,7 +47,7 @@ function App() {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="text-2xl md:text-3xl text-slate-300 mb-8 font-medium"
           >
-            Kendo Tournament
+            A Red vs White Team Kendo Shiai
           </motion.p>
 
           <motion.div
@@ -56,20 +56,16 @@ function App() {
             transition={{ delay: 0.7, duration: 0.6 }}
             className="flex flex-wrap justify-center gap-4"
           >
-            <motion.button
+            <motion.a
+              href="https://luma.com/rhgut8na"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-spam-yellow text-spam-blue-dark px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-spam-yellow/30 hover:shadow-spam-yellow/50 transition-all"
+              className="bg-spam-yellow text-spam-blue-dark px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-spam-yellow/30 hover:shadow-spam-yellow/50 transition-all inline-block border-4 border-spam-yellow/50 hover:border-white/80"
             >
               Register Now
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-white/10 backdrop-blur-sm text-white border-2 border-white/20 px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all"
-            >
-              Learn More
-            </motion.button>
+            </motion.a>
           </motion.div>
         </motion.section>
 
@@ -88,7 +84,7 @@ function App() {
             >
               <Calendar className="w-10 h-10 text-spam-yellow mb-4" />
               <h3 className="text-lg font-bold text-white mb-2">When</h3>
-              <p className="text-slate-300">November 20, 2025</p>
+              <p className="text-slate-300">Dec 13, 2025</p>
             </motion.div>
 
             {/* Location Card */}
@@ -98,7 +94,7 @@ function App() {
             >
               <MapPin className="w-10 h-10 text-spam-yellow mb-4" />
               <h3 className="text-lg font-bold text-white mb-2">Where</h3>
-              <p className="text-slate-300">TBA</p>
+              <p className="text-slate-300">Aero Sports Center, QC</p>
             </motion.div>
 
             {/* Prize Card */}
@@ -134,7 +130,7 @@ function App() {
             >
               <Award className="w-20 h-20 mx-auto mb-6 text-spam-blue-dark" />
               <h2 className="font-['Montserrat'] font-black text-5xl md:text-7xl text-spam-blue-dark mb-4">
-                FIRST PRIZE
+                WINNERS GET SPAM
               </h2>
               <div className="inline-block bg-spam-blue-dark text-spam-yellow px-8 py-4 rounded-2xl text-4xl md:text-5xl font-black mb-4">
                 SPAM
@@ -168,51 +164,22 @@ function App() {
                 <h3 className="text-xl font-bold text-spam-yellow">Hosted By</h3>
               </div>
               <p className="text-lg text-slate-200 leading-relaxed">
-                United Federation of KENDOKA Philippines
+                United Kendokas from the Philippines
               </p>
             </motion.div>
 
-            {/* Sponsored By */}
+            {/* Who Can Participate */}
             <motion.div
               whileHover={{ y: -5 }}
               className="bg-white/5 backdrop-blur-sm border border-spam-yellow/30 rounded-2xl p-8 hover:border-spam-yellow/50 hover:bg-white/10 transition-all"
             >
               <div className="flex items-center gap-3 mb-4">
                 <Sparkles className="w-8 h-8 text-spam-yellow" />
-                <h3 className="text-xl font-bold text-spam-yellow">Sponsored By</h3>
+                <h3 className="text-xl font-bold text-spam-yellow">Who Can Participate?</h3>
               </div>
-              <div className="space-y-6">
-                {/* Tier I Sponsors */}
-                <div>
-                  <p className="text-sm font-semibold text-spam-yellow/80 mb-3">Tier I</p>
-                  <div className="space-y-3">
-                    {/* Sponsor 1 */}
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-white/10 rounded-lg border border-white/20 flex items-center justify-center flex-shrink-0">
-                        <Sparkles className="w-6 h-6 text-spam-yellow/50" />
-                      </div>
-                      <p className="text-lg text-slate-200">ETHYL ANGELES</p>
-                    </div>
-                    {/* Sponsor 2 */}
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-white/10 rounded-lg border border-white/20 flex items-center justify-center flex-shrink-0">
-                        <Sparkles className="w-6 h-6 text-spam-yellow/50" />
-                      </div>
-                      <p className="text-lg text-slate-200">MEDVAS</p>
-                    </div>
-                  </div>
-                </div>
-                {/* Tier II Sponsors */}
-                <div>
-                  <p className="text-sm font-semibold text-spam-yellow/80 mb-3">Tier II</p>
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-white/10 rounded-lg border border-white/20 flex items-center justify-center flex-shrink-0">
-                      <Sparkles className="w-6 h-6 text-spam-yellow/50" />
-                    </div>
-                    <p className="text-lg text-slate-200">SISTER MALLARI</p>
-                  </div>
-                </div>
-              </div>
+              <p className="text-lg text-slate-200 leading-relaxed">
+                Open to all IGA-KEN members.
+              </p>
             </motion.div>
           </div>
         </motion.section>
@@ -230,7 +197,7 @@ function App() {
               Ready to Compete?
             </h2>
             <p className="text-lg text-slate-200 mb-6 max-w-2xl mx-auto">
-              Join kendoka from across the Philippines for an exciting day of competition, camaraderie, and SPAM.
+              Join now for an exciting day of competition, camaraderie, and SPAM.
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
