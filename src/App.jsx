@@ -219,11 +219,85 @@ function App() {
           </div>
         </motion.section>
 
+        {/* Sponsors Section */}
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.9, duration: 0.6 }}
+          className="mb-12 md:mb-16"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+            Our Sponsors
+          </h2>
+
+          {/* Tier 1 Sponsors - Regular SPAM */}
+          <div className="mb-12">
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="h-1 w-16 bg-spam-yellow rounded-full"></div>
+              <h3 className="text-2xl font-bold text-spam-yellow">Tier 1 Sponsors</h3>
+              <div className="h-1 w-16 bg-spam-yellow rounded-full"></div>
+            </div>
+            <p className="text-center text-slate-400 mb-8 text-sm uppercase tracking-wider">
+              Regular SPAM
+            </p>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Placeholder sponsors - replace with actual sponsors */}
+              {['Sponsor 1', 'Sponsor 2', 'Sponsor 3'].map((sponsor, index) => (
+                <motion.div
+                  key={sponsor}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 2.0 + index * 0.1, duration: 0.5 }}
+                  whileHover={{ y: -8, scale: 1.02 }}
+                  className="bg-gradient-to-br from-spam-blue to-spam-blue-dark rounded-2xl p-8 border-2 border-spam-yellow/30 hover:border-spam-yellow transition-all shadow-lg hover:shadow-spam-yellow/30"
+                >
+                  <div className="aspect-video flex items-center justify-center bg-white/10 rounded-xl mb-4 backdrop-blur-sm">
+                    <Trophy className="w-12 h-12 text-spam-yellow" />
+                  </div>
+                  <h4 className="text-xl font-bold text-white text-center">{sponsor}</h4>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          {/* Tier 2 Sponsors - 25% Less Sodium SPAM */}
+          <div>
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="h-1 w-12 bg-spam-yellow/60 rounded-full"></div>
+              <h3 className="text-xl font-bold text-spam-yellow/80">Tier 2 Sponsors</h3>
+              <div className="h-1 w-12 bg-spam-yellow/60 rounded-full"></div>
+            </div>
+            <p className="text-center text-slate-400 mb-8 text-sm uppercase tracking-wider">
+              25% Less Sodium SPAM
+            </p>
+
+            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {/* Placeholder sponsors - replace with actual sponsors */}
+              {['Sponsor A', 'Sponsor B', 'Sponsor C', 'Sponsor D'].map((sponsor, index) => (
+                <motion.div
+                  key={sponsor}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 2.3 + index * 0.08, duration: 0.4 }}
+                  whileHover={{ y: -4, scale: 1.03 }}
+                  className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-spam-yellow/40 hover:bg-white/10 transition-all"
+                >
+                  <div className="aspect-square flex items-center justify-center bg-white/5 rounded-lg mb-3">
+                    <Sparkles className="w-8 h-8 text-spam-yellow/70" />
+                  </div>
+                  <h4 className="text-sm font-semibold text-slate-200 text-center">{sponsor}</h4>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </motion.section>
+
         {/* Footer */}
         <motion.footer
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.9, duration: 0.6 }}
+          transition={{ delay: 2.5, duration: 0.6 }}
           className="text-center py-8 text-slate-400 text-sm"
         >
           <p>&copy; 2025 Spam Cup. All rights reserved.</p>
